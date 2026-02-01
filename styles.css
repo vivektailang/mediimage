@@ -148,6 +148,22 @@ body {
     color: var(--primary-color) !important;
 }
 
+/* Mobile Menu Overlay Fix */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #000;
+        z-index: 1000;
+        padding: 0 1.5rem 1rem 1.5rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+}
+
 /* Hero Section */
 .hero-section {
     background: #000000;
@@ -674,7 +690,7 @@ img {
 
 @media (max-width: 576px) {
     html {
-        scroll-padding-top: 80px;
+        scroll-padding-top: 90px;
     }
 
     .section-title {
