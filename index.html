@@ -10,16 +10,16 @@
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-white shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-black shadow-sm">
         <div class="container-fluid px-4">
             <a class="navbar-brand" href="#home">
-                <img src="img/watermark_logo.jpeg" alt="MEDiiMAGE HEALTHCARE" height="50" class="me-2">
+                <img src="img/header_logo.jpeg" alt="MEDiiMAGE HEALTHCARE" height="75" class="me-2">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav me-auto">
                     <li class="nav-item">
                         <a class="nav-link active" href="#home">Home</a>
                     </li>
@@ -33,6 +33,9 @@
                         <a class="nav-link" href="#why-us">Why Choose Us</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
@@ -41,20 +44,17 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-section">
+    <section id="home" class="hero-section bg-white">
         <div class="hero-content">
             <div class="container h-100">
                 <div class="row align-items-center h-100">
-                    <div class="col-lg-6 text-white fade-in-up">
+                    <div class="col-lg-12 text-center text-dark fade-in-up">
                         <h1 class="display-4 fw-bold mb-4">Imagining a Healthier Tomorrow</h1>
-                        <p class="lead mb-4">Pioneering healthcare solutions with cutting-edge medical imaging technology and expert support.</p>
-                        <div class="d-flex gap-3">
+                        <p class="lead mb-4 mx-auto" style="max-width: 800px;">Pioneering healthcare solutions with cutting-edge medical imaging technology and expert support.</p>
+                        <div class="d-flex gap-3 justify-content-center">
                             <a href="#contact" class="btn btn-primary btn-lg btn-hover">Get Started</a>
-                            <a href="#partnership" class="btn btn-outline-light btn-lg btn-hover">Learn More</a>
+                            <a href="#partnership" class="btn btn-outline-dark btn-lg btn-hover">Learn More</a>
                         </div>
-                    </div>
-                    <div class="col-lg-6 text-center fade-in-left">
-                        <img src="img/watermark_logo.jpeg" alt="MEDiiMAGE Healthcare" class="img-fluid hero-image">
                     </div>
                 </div>
             </div>
@@ -62,27 +62,32 @@
     </section>
 
     <!-- Mission Section -->
-    <section id="mission" class="section-padding bg-light">
+    <section id="mission" class="section-padding bg-white">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0 fade-in-left">
-                    <img src="img/watermark_logo.jpeg" alt="Our Mission" class="img-fluid rounded-3 shadow">
-                </div>
-                <div class="col-lg-6 ps-lg-5 fade-in-right">
+                <div class="col-lg-12 fade-in-up text-center">
                     <h2 class="section-title mb-4">Our Mission</h2>
-                    <p class="fs-5 mb-3">At MEDiiMAGE HEALTHCARE, we're committed to transforming healthcare delivery with innovative, cutting-edge solutions.</p>
-                    <p class="fs-5 mb-3">Leveraging our deep understanding of medical imaging and healthcare, we empower healthcare professionals to make informed decisions and deliver exceptional patient care.</p>
-                    <div class="highlight-box mt-4">
-                        <i class="fas fa-heartbeat me-2 text-danger"></i>
-                        <span>Excellence in Patient Care</span>
-                    </div>
-                    <div class="highlight-box mt-2">
-                        <i class="fas fa-flask me-2 text-info"></i>
-                        <span>Innovative Technology</span>
-                    </div>
-                    <div class="highlight-box mt-2">
-                        <i class="fas fa-handshake me-2 text-success"></i>
-                        <span>Trusted Partnerships</span>
+                    <p class="fs-5 mb-3 mx-auto" style="max-width: 900px;">At MEDiiMAGE HEALTHCARE, we're committed to transforming healthcare delivery with innovative, cutting-edge solutions.</p>
+                    <p class="fs-5 mb-3 mx-auto" style="max-width: 900px;">Leveraging our deep understanding of medical imaging and healthcare, we empower healthcare professionals to make informed decisions and deliver exceptional patient care.</p>
+                    <div class="row justify-content-center mt-4 g-3">
+                        <div class="col-md-4">
+                            <div class="highlight-box justify-content-center">
+                                <i class="fas fa-heartbeat me-2 text-danger"></i>
+                                <span>Excellence in Patient Care</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="highlight-box justify-content-center">
+                                <i class="fas fa-flask me-2 text-info"></i>
+                                <span>Innovative Technology</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="highlight-box justify-content-center">
+                                <i class="fas fa-handshake me-2 text-success"></i>
+                                <span>Trusted Partnerships</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -100,9 +105,9 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm card-hover fade-in-up">
                         <div class="card-body text-center">
-                            <i class="fas fa-user-tie fa-3x text-primary mb-3"></i>
+                            <img src="img/founder.jpeg" alt="Brajesh Chaudhary" class="rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; background: none; padding: 0;">
                             <h4 class="card-title">Brajesh Chaudhary</h4>
-                            <p class="text-muted mb-3">Founder & Director</p>
+                            <p class="text-muted mb-3">Founder</p>
                             <p class="card-text">Senior Engineer with 14+ years of dedicated service at Konica Minolta Healthcare India. Industry expert with exceptional expertise.</p>
                             <div class="badge bg-primary">Channel Partner</div>
                         </div>
@@ -113,11 +118,11 @@
     </section>
 
     <!-- Partnership Section -->
-    <section id="partnership" class="section-padding bg-gradient">
+    <section id="partnership" class="section-padding bg-white">
         <div class="container">
             <div class="text-center mb-5 fade-in-up">
-                <h2 class="section-title text-white mb-3">Our Partnership</h2>
-                <p class="lead text-white-50">Empowered by industry-leading technology</p>
+                <h2 class="section-title text-dark mb-3">Our Partnership</h2>
+                <p class="lead text-muted">Empowered by industry-leading technology</p>
             </div>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-4 fade-in-up" style="animation-delay: 0.1s;">
@@ -194,47 +199,92 @@
     </section>
 
     <!-- Products Section -->
-    <section class="section-padding bg-light">
+    <section id="products" class="section-padding bg-light">
         <div class="container">
             <div class="text-center mb-5 fade-in-up">
-                <h2 class="section-title mb-3">Our Healthcare Solutions</h2>
+                <h2 class="section-title mb-3">Our Products</h2>
                 <p class="lead text-muted">Comprehensive range of medical imaging equipment</p>
             </div>
             <div class="row g-4">
-                <div class="col-md-6 col-lg-3 fade-in-up" style="animation-delay: 0.1s;">
-                    <div class="product-card">
+                <div class="col-md-6 col-lg-4 fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="product-card h-100">
                         <div class="product-icon">
-                            <i class="fas fa-xray"></i>
+                            <i class="fas fa-x-ray"></i>
                         </div>
-                        <h5>Digital Radiography</h5>
-                        <p>Advanced digital imaging solutions for superior diagnostic accuracy.</p>
+                        <h5>Digital X-ray (DR)</h5>
+                        <p>High-resolution digital imaging for immediate diagnostic results. Streamlines workflow with lower radiation dose and superior image quality.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3 fade-in-up" style="animation-delay: 0.2s;">
-                    <div class="product-card">
+                <div class="col-md-6 col-lg-4 fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="product-card h-100">
                         <div class="product-icon">
-                            <i class="fas fa-microscope"></i>
+                            <i class="fas fa-desktop"></i>
                         </div>
-                        <h5>Diagnostic Imaging</h5>
-                        <p>Comprehensive diagnostic tools for precise healthcare assessments.</p>
+                        <h5>Computerised X-ray (CR)</h5>
+                        <p>Cost-effective digital imaging solution using phosphor plates. Bridges the gap between analog and fully digital radiography systems.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3 fade-in-up" style="animation-delay: 0.3s;">
-                    <div class="product-card">
+                <div class="col-md-6 col-lg-4 fade-in-up" style="animation-delay: 0.3s;">
+                    <div class="product-card h-100">
                         <div class="product-icon">
-                            <i class="fas fa-heartbeat"></i>
+                            <i class="fas fa-radiation"></i>
                         </div>
-                        <h5>Medical Services</h5>
-                        <p>Professional support services and maintenance for all equipment.</p>
+                        <h5>X-ray Machine</h5>
+                        <p>Reliable and versatile radiographic systems for general diagnostics. Designed for durability and consistent performance in high-volume settings.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3 fade-in-up" style="animation-delay: 0.4s;">
-                    <div class="product-card">
+                <div class="col-md-6 col-lg-4 fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="product-card h-100">
                         <div class="product-icon">
-                            <i class="fas fa-cogs"></i>
+                            <i class="fas fa-circle-notch"></i>
                         </div>
-                        <h5>Technical Support</h5>
-                        <p>24/7 technical assistance and expert consultation services.</p>
+                        <h5>C-Arm</h5>
+                        <p>Real-time fluoroscopic imaging for surgical and orthopedic procedures. Offers exceptional maneuverability and high-quality visualization.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="product-card h-100">
+                        <div class="product-icon">
+                            <i class="fas fa-syringe"></i>
+                        </div>
+                        <h5>Pressure Injector</h5>
+                        <p>Precision contrast delivery systems for CT and MRI scans. Ensures optimal enhancement and patient safety with automated protocols.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 fade-in-up" style="animation-delay: 0.3s;">
+                    <div class="product-card h-100">
+                        <div class="product-icon">
+                            <i class="fas fa-wave-square"></i>
+                        </div>
+                        <h5>Ultrasound</h5>
+                        <p>Advanced sonography systems for obstetrics, cardiology, and general imaging. Delivers crystal-clear images with intuitive user interfaces.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="product-card h-100">
+                        <div class="product-icon">
+                            <i class="fas fa-ring"></i>
+                        </div>
+                        <h5>CT</h5>
+                        <p>State-of-the-art Computed Tomography scanners for detailed cross-sectional imaging. Fast scan times and high resolution for accurate diagnoses.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="product-card h-100">
+                        <div class="product-icon">
+                            <i class="fas fa-magnet"></i>
+                        </div>
+                        <h5>MRI</h5>
+                        <p>Magnetic Resonance Imaging systems providing exceptional soft tissue contrast. Patient-friendly designs with advanced clinical applications.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 fade-in-up" style="animation-delay: 0.3s;">
+                    <div class="product-card h-100">
+                        <div class="product-icon">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <h5>X-Ray Films</h5>
+                        <p>High-quality medical radiographic films for analog imaging needs. Delivers sharp definition and consistent contrast for reliable reading.</p>
                     </div>
                 </div>
             </div>
@@ -242,12 +292,12 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section-padding bg-gradient">
+    <section id="contact" class="section-padding bg-white">
         <div class="container-fluid">
             <div class="row g-4">
                 <div class="col-12 fade-in-left">
-                    <h2 class="section-title text-white mb-4">Get In Touch</h2>
-                    <p class="text-white-50 fs-5 mb-4">Ready to transform your healthcare facility with cutting-edge medical imaging solutions?</p>
+                    <h2 class="section-title text-dark mb-4">Get In Touch</h2>
+                    <p class="text-muted fs-5 mb-4">Ready to transform your healthcare facility with cutting-edge medical imaging solutions?</p>
                     
                     <div class="contact-items-wrapper">
                         <div class="contact-item mb-4">
@@ -255,8 +305,8 @@
                                 <i class="fas fa-phone"></i>
                             </div>
                             <div>
-                                <h5 class="text-white mb-1">Phone</h5>
-                                <a href="tel:+919827283320" class="text-white-50 text-decoration-none">+91 98272 83320</a>
+                                <h5 class="text-dark mb-1">Phone</h5>
+                                <a href="tel:+919827283320" class="text-muted text-decoration-none">+91 98272 83320</a>
                             </div>
                         </div>
 
@@ -265,8 +315,8 @@
                                 <i class="fab fa-whatsapp"></i>
                             </a>
                             <div>
-                                <h5 class="text-white mb-1">WhatsApp</h5>
-                                <a href="https://wa.me/919827283320" target="_blank" class="text-white-50 text-decoration-none">+91 98272 83320</a>
+                                <h5 class="text-dark mb-1">WhatsApp</h5>
+                                <a href="https://wa.me/7974883320" target="_blank" class="text-muted text-decoration-none">+91 79748 83320</a>
                             </div>
                         </div>
 
@@ -275,8 +325,8 @@
                                 <i class="fas fa-envelope"></i>
                             </a>
                             <div>
-                                <h5 class="text-white mb-1">Sales Inquiries</h5>
-                                <a href="mailto:sales@mediimage.co.in" class="text-white-50 text-decoration-none">sales@mediimage.co.in</a>
+                                <h5 class="text-dark mb-1">Sales Inquiries</h5>
+                                <a href="mailto:sales@mediimage.co.in" class="text-muted text-decoration-none">sales@mediimage.co.in</a>
                             </div>
                         </div>
 
@@ -285,18 +335,8 @@
                                 <i class="fas fa-headset"></i>
                             </div>
                             <div>
-                                <h5 class="text-white mb-1">Support</h5>
-                                <a href="mailto:support@mediimage.co.in" class="text-white-50 text-decoration-none">support@mediimage.co.in</a>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div>
-                                <h5 class="text-white mb-1">Director</h5>
-                                <a href="mailto:brajesh@mediimage.co.in" class="text-white-50 text-decoration-none">brajesh@mediimage.co.in</a>
+                                <h5 class="text-dark mb-1">Support</h5>
+                                <a href="mailto:support@mediimage.co.in" class="text-muted text-decoration-none">support@mediimage.co.in</a>
                             </div>
                         </div>
                     </div>
@@ -312,38 +352,38 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer bg-dark text-white py-5">
+    <footer class="footer bg-white text-dark py-5 border-top">
         <div class="container">
             <div class="row g-4 mb-4">
                 <div class="col-md-4">
                     <img src="img/header_logo.jpeg" alt="MEDiiMAGE" height="50" class="mb-3">
-                    <p class="text-white-50">Pioneering healthcare solutions with cutting-edge medical imaging technology.</p>
+                    <p class="text-muted">Pioneering healthcare solutions with cutting-edge medical imaging technology.</p>
                 </div>
                 <div class="col-md-4">
-                    <h6 class="text-white mb-3">Quick Links</h6>
+                    <h6 class="text-dark mb-3">Quick Links</h6>
                     <ul class="list-unstyled">
-                        <li><a href="#mission" class="text-white-50 text-decoration-none">Mission</a></li>
-                        <li><a href="#partnership" class="text-white-50 text-decoration-none">Partnership</a></li>
-                        <li><a href="#why-us" class="text-white-50 text-decoration-none">Why Choose Us</a></li>
-                        <li><a href="#contact" class="text-white-50 text-decoration-none">Contact</a></li>
+                        <li><a href="#mission" class="text-muted text-decoration-none">Mission</a></li>
+                        <li><a href="#partnership" class="text-muted text-decoration-none">Partnership</a></li>
+                        <li><a href="#why-us" class="text-muted text-decoration-none">Why Choose Us</a></li>
+                        <li><a href="#contact" class="text-muted text-decoration-none">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
-                    <h6 class="text-white mb-3">Connect With Us</h6>
+                    <h6 class="text-dark mb-3">Connect With Us</h6>
                     <div class="social-links">
-                        <a href="https://www.linkedin.com" class="text-white-50 text-decoration-none me-3"><i class="fab fa-linkedin fa-lg"></i></a>
-                        <a href="https://www.facebook.com" class="text-white-50 text-decoration-none me-3"><i class="fab fa-facebook fa-lg"></i></a>
-                        <a href="https://www.twitter.com" class="text-white-50 text-decoration-none"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="https://www.linkedin.com/company/mediimagehealthcare" target="_blank" class="text-muted text-decoration-none me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="https://www.facebook.com/share/1AZ1N89nsT/" target="_blank" class="text-muted text-decoration-none me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="https://www.instagram.com/mediimagehealthcare?igsh=ZWVpOGV4bGplajdw" target="_blank" class="text-muted text-decoration-none"><i class="fab fa-instagram fa-lg"></i></a>
                     </div>
                 </div>
             </div>
-            <hr class="bg-white-50">
+            <hr class="text-muted">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <p class="text-white-50 mb-0">&copy; 2026 MEDiiMAGE HEALTHCARE. All rights reserved.</p>
+                    <p class="text-muted mb-0">&copy; 2026 MEDiiMAGE HEALTHCARE. All rights reserved.</p>
                 </div>
                 <div class="col-md-6 text-md-end">
-                    <p class="text-white-50 mb-0">Website: <a href="https://www.mediimage.in" class="text-white-50 text-decoration-none">www.mediimage.in</a></p>
+                    <p class="text-muted mb-0">Website: <a href="https://www.mediimage.in" class="text-muted text-decoration-none">www.mediimage.in</a></p>
                 </div>
             </div>
         </div>
