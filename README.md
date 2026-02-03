@@ -15,8 +15,8 @@ Why Choose Us?
 
 With our expertise and Konica Minolta's  technology, we're poised to revolutionize healthcare in India. Let's collaborate to enhance patient outcomes and drive healthcare excellence.
 
-sales@mediimage.co.in
-support@mediimage.co.in
+sales@mediimage.in
+support@mediimage.in
 brajesh@mediimage.co.in
 
 +91 98272 83320
