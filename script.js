@@ -223,7 +223,8 @@ document.addEventListener('DOMContentLoaded', function() {
         'C-Arm': 'C-ARM.jpeg',
         'X-Ray Films': 'X-Ray_Films.jpeg',
         'Medical Printer': 'Printer.jpeg',
-        'Ultrasound': 'Ultrasound.jpeg'
+        'Ultrasound': 'Ultrasound.jpeg',
+        'Pressure Injector': 'Pressure_Injector.jpeg'
     };
 
     productCards.forEach(card => {
