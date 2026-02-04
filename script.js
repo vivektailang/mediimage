@@ -211,6 +211,52 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     `;
     document.head.appendChild(style);
+
+    // Dynamic Product Image Loading
+    const productCards = document.querySelectorAll('.product-card');
+    
+    // Map specific product titles to provided filenames
+    const productImages = {
+        'Digital X-ray (DR)': 'DR_Machine.jpeg',
+        'Computerised X-ray (CR)': 'CR.jpeg',
+        'X-ray Machine': 'X-Ray.jpeg',
+        'C-Arm': 'C-ARM.jpeg',
+        'X-Ray Films': 'X-Ray_Films.jpeg',
+        'Medical Printer': 'Printer.jpeg'
+    };
+
+    productCards.forEach(card => {
+        const title = card.querySelector('h5');
+        const icon = card.querySelector('.product-icon');
+        
+        if (title && icon) {
+            const rawTitle = title.textContent.trim();
+            
+            if (productImages[rawTitle]) {
+                // Load mapped image
+                const img = new Image();
+                img.alt = rawTitle;
+                img.onload = () => icon.replaceWith(img);
+                img.src = `img/${productImages[rawTitle]}`;
+            } else {
+                // Fallback for other products
+                const slug = rawTitle.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+                const extensions = ['jpg', 'png', 'jpeg', 'webp'];
+                
+                const tryLoadImage = (index) => {
+                    if (index >= extensions.length) return;
+                    
+                    const img = new Image();
+                    img.alt = rawTitle;
+                    img.onload = () => icon.replaceWith(img);
+                    img.onerror = () => tryLoadImage(index + 1);
+                    img.src = `img/${slug}.${extensions[index]}`;
+                };
+                
+                tryLoadImage(0);
+            }
+        }
+    });
 });
 
 // Alert function
