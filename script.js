@@ -1,6 +1,9 @@
 // ==================== JavaScript Interactivity ====================
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Only declare these once at the top of DOMContentLoaded
+    // (moved to top, so remove here)
+
     // Smooth scroll offset for navbar
     const navbar = document.querySelector('.navbar');
     const navbarHeight = navbar ? navbar.offsetHeight : 0;
@@ -140,18 +143,31 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Scroll to top button
+
+    // Scroll to top button and WhatsApp button
     const scrollTopBtn = document.createElement('button');
     scrollTopBtn.id = 'scrollTop';
     scrollTopBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
     scrollTopBtn.className = 'scroll-top-btn';
     document.body.appendChild(scrollTopBtn);
 
+    // WhatsApp button
+    const whatsappBtn = document.createElement('a');
+    whatsappBtn.id = 'whatsappContact';
+    whatsappBtn.href = 'https://wa.me/919827283320'; // Use the WhatsApp number from the website
+    whatsappBtn.target = '_blank';
+    whatsappBtn.title = 'Contact us on WhatsApp';
+    whatsappBtn.innerHTML = '<span class="contact-us-label">Contact Us</span>';
+    whatsappBtn.className = 'whatsapp-contact-btn';
+    document.body.appendChild(whatsappBtn);
+
     window.addEventListener('scroll', () => {
         if (window.pageYOffset > 300) {
             scrollTopBtn.classList.add('show');
+            whatsappBtn.classList.add('show');
         } else {
             scrollTopBtn.classList.remove('show');
+            whatsappBtn.classList.remove('show');
         }
     });
 
@@ -162,9 +178,46 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Add CSS for scroll top button
+    // Add CSS for scroll top button and WhatsApp button
     const style = document.createElement('style');
     style.textContent = `
+        .contact-modal {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+        }
+        .contact-modal-backdrop {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.4);
+        }
+        .contact-modal-content {
+            position: relative;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+            padding: 2rem 1.5rem 1.5rem 1.5rem;
+            min-width: 320px;
+            max-width: 90vw;
+            z-index: 1;
+            animation: modalIn 0.2s;
+        }
+        .contact-modal-close {
+            position: absolute;
+            top: 10px; right: 14px;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #888;
+            cursor: pointer;
+        }
+        @keyframes modalIn {
+            from { transform: translateY(40px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
         .scroll-top-btn {
             position: fixed;
             bottom: 20px;
@@ -191,6 +244,44 @@ document.addEventListener('DOMContentLoaded', function() {
 
         .scroll-top-btn:hover {
             transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 102, 204, 0.5);
+        }
+
+        .whatsapp-contact-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 80px;
+            min-width: 120px;
+            height: 50px;
+            background: linear-gradient(135deg, #0066cc, #00cc99);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(0, 102, 204, 0.3);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            text-align: center;
+            padding: 0 22px;
+        }
+
+        .whatsapp-contact-btn .contact-us-label {
+            display: inline-block;
+            vertical-align: middle;
+            padding: 0;
+        }
+
+        .whatsapp-contact-btn.show {
+            display: flex;
+        }
+
+        .whatsapp-contact-btn:hover {
+            background: linear-gradient(135deg, #00cc99, #0066cc);
             box-shadow: 0 6px 20px rgba(0, 102, 204, 0.5);
         }
 
